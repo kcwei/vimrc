@@ -10,6 +10,6 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install plugins
 vim +PluginInstall +qall
 
+# YCM install and setting
 ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
-
-mv ~/.vim/ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
+ln -f -s ~/.vim/ycm_extra_conf.py ~/.ycm_extra_conf.py
